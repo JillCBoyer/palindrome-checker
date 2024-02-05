@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik+Mono+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+body {
+    background-image: url("./background.jpg");
+    width: 100vw;
+    height: 100vh;
+}
+.container {
+    width: 80%;
+    min-width: 300px;
+    background: black;
+    opacity: 85%;
+    margin: 50px auto;
+    padding: 100px;
+    border-radius: 5%;
+}
+h1 {
+    font-size: 3.5em;
+    color: #93557C;
+    font-family: 'Rubik Mono One', monospace;
+}
+p {
+    color: #ffeace;
+    font-size: 2rem;
+    line-height: 1.5em;
+    opacity: 75%;
+    width: 80%;
+    margin: auto;
+}
+input {
+    background: #ABCBE4;
+    opacity: 90%;
+    font-family: 'Rubik Mono One', monospace;
+    line-height: 2.5em;
+    width: 300px;
+}
+input::placeholder {
+    color: black;
+}
+button {
+    font-family: 'Rubik Mono One', monospace;
+    opacity: 90%;
+    cursor: pointer;
+    display: block;
+    width: 300px;
+    margin: 20px auto;
+    line-height: 2em;
+    background: #74B9A4;
+    font-size: 1rem;
+    border: 2px solid #5d9584;
+}
+#result {
+    color: #FD5147;
+    font-size: 4rem;
+}
+
+
