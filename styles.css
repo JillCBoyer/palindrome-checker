@@ -3,61 +3,123 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
     text-align: center;
     font-family: 'Permanent Marker', cursive;
 }
+
+html {
+    min-height: 100%;
+    display: flex;
+}
 body {
     background-image: url("./background.jpg");
-    width: 100vw;
-    height: 100vh;
+    width: 100dvw;
+    display: flex;
+    align-items: center;
 }
+
 .container {
     width: 80%;
     min-width: 300px;
     background: black;
     opacity: 85%;
-    margin: 50px auto;
-    padding: 100px;
-    border-radius: 5%;
+    margin: 1rem auto;
+    padding: 1rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 h1 {
-    font-size: 3.5em;
+    font-size: 2rem;
     color: #93557C;
     font-family: 'Rubik Mono One', monospace;
+    margin: 2rem auto;
+    line-height: 1.5; 
 }
 p {
     color: #ffeace;
-    font-size: 2rem;
-    line-height: 1.5em;
-    opacity: 75%;
-    width: 80%;
-    margin: auto;
+    font-size: 1.5rem;
+    opacity: 90%;
+    margin-bottom: 2rem;
+    line-height: 1.25;
+    font-weight: 200;
+    max-width: 60ch;
 }
+
 input {
     background: #ABCBE4;
     opacity: 90%;
     font-family: 'Rubik Mono One', monospace;
-    line-height: 2.5em;
-    width: 300px;
+    font-size: 0.75rem;
+    margin: auto;
+    border: none;
+    border-radius: 66666px;
+    max-width: 80%;
+    padding: 0.5em 1em;
 }
 input::placeholder {
     color: black;
 }
+
 button {
     font-family: 'Rubik Mono One', monospace;
     opacity: 90%;
     cursor: pointer;
     display: block;
-    width: 300px;
+    max-width: 80%;
     margin: 20px auto;
-    line-height: 2em;
     background: #74B9A4;
-    font-size: 1rem;
-    border: 2px solid #5d9584;
+    font-size: 0.75rem;
+    border: none;
+    border-radius: 888888px;
+    padding: 0.5em 1em;
 }
+
 #result {
     color: #FD5147;
-    font-size: 4rem;
+    font-size: 2rem;
+    line-height: calc(1em + 0.5rem);
+    margin-bottom: 20px;
 }
 
 
+/* lg */
+@media (min-width: 900px) {
+    h1 {
+        font-size: 4rem;
+        margin: 4rem auto;
+        line-height: calc(1em + 0.5rem); 
+    }
+    p {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+        line-height:  calc(1em + 0.5rem);
+    }
+
+    input {
+        font-size: 1rem;
+        max-width: 80%;
+        padding: 0.5em 1em;
+    }
+    
+    button {
+        font-size: 1rem;
+        border: none;
+        border-radius: 888888px;
+        padding: 0.5em 1em;
+    }
+    
+    #result {
+        font-size: 4rem;
+    }
+    
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
